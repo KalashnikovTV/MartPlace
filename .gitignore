@@ -2,6 +2,7 @@
 .AppleDouble
 .LSOverride
 .vs
+*Thumbs.db
 
 node_modules/
 app/css/
