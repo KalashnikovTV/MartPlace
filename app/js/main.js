@@ -6,8 +6,8 @@ $(function(){
         readOnly: true,
         normalFill: "#ddd",
         multiColor: {
-            "startColor": "#ffc000", //RED
-            "endColor"  : "#ffc000"  //GREEN
+            "startColor": "#ffc000",
+            "endColor"  : "#ffc000"  
         }
     });
 
