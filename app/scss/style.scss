@@ -210,12 +210,22 @@
         padding-left: 28px;
         padding-right: 194px;
         outline: none;
-    
-        /* button {
-
-        } */
+    }
+    &-filter {
+        position: absolute;
+        border: 1px solid #676767;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 194px;
+        text-align-last: center;
+        outline: none;
+        color: #555555;
     }
     &-button {
+        border: none;
+        outline: none;
+        cursor: pointer;
         padding: 20px 35px;
         margin-left: 30px;
         width: 223px;
@@ -280,6 +290,21 @@
 .products__filters {
     font-size: 16px;
     color: #747b86;
+    display: flex;
+    &-btn {
+        margin-left: 25px;
+        width: 5px;
+        cursor: pointer;
+    }
+    &-dots {
+        width: 100%;
+        background-color: #a3b1c4;
+        height: 5px;
+        border-radius: 50%;
+        &:not(:last-child){
+            margin-bottom: 4px;
+        }
+    }
 }
 
 .products__inner-bg {

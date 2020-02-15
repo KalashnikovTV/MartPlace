@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MartPlace</title>
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
@@ -100,17 +100,16 @@
                         <div class="search__form">
                             <form>
                                 <input type="text" placeholder="Search your products..." required>
-
-                                <!-- <select name="" id="">
-                                    <option value="All Categories">All Categories</option>
-                                    <option value="All Categories">Test</option>
-                                    <option value="All Categories">All Categories</option>
-                                </select> -->
-                                <!-- доделать выпадающий список -->
-
+                                <select class="search__form-filter" name="category">
+                                    <option value="all">All Categories</option>
+                                    <option value="category1">Category1</option>
+                                    <option value="category2">Category2</option>
+                                    <option value="category3">Category3</option>
+                                    <option value="category4">Category4</option>
+                                </select>
                             </form>
                         </div>
-                        <a class="search__form-button" href="#">Search Now</a>
+                        <button class="search__form-button" type="submit">Search Now</button>
                     </div>
                 </div>
             </div>
@@ -170,11 +169,18 @@
                 <div class="products__title">
                     Newest Release Products
                 </div>
-                <!-- <button type="button" data-sort="order:asc">Ascending</button>
-                <button type="button" data-sort="order:descending">Descending</button>
-                <button type="button" data-sort="random">Random</button> -->
+               
                 <div class="products__filters">
                     Filter by:
+                    <div class="products__filters-btn">
+                        <div class="products__filters-dots"></div>
+                        <div class="products__filters-dots"></div>
+                        <div class="products__filters-dots"></div>
+                        <!-- <button type="button" data-sort="order:asc">Ascending</button>
+                        <button type="button" data-sort="order:descending">Descending</button>
+                        <button type="button" data-sort="random">Random</button> -->
+                    </div>
+                    
                 </div>
 
             </div>
