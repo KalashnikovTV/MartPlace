@@ -35,3 +35,13 @@ body {
     font-weight: 400;
     font-size: 30px;
 }
+
+.products__title-inner {
+    padding: 45px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+}

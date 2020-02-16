@@ -11,10 +11,18 @@ $(function(){
         }
     });
 
+    $('.weekly-slider__inner').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button class="slick-arrow slick-prev"><img src="images/content/chevron-left.png" alt=""></button>',
+        nextArrow: '<button class="slick-arrow slick-next"><img src="images/content/chevron-right.png" alt=""></button>',
+    });
+
     $('.products-slider__inner').slick({
-        arrows: true,
         slidesToShow: 3,
         slidesToScroll: 3,
+        prevArrow: '<button class="slick-arrow slick-prev"><img src="images/content/chevron-left.png" alt=""></button>',
+        nextArrow: '<button class="slick-arrow slick-next"><img src="images/content/chevron-right.png" alt=""></button>',
     });
 
     var mixer = mixitup('.products__inner-box');
