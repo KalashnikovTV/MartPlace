@@ -725,7 +725,8 @@
     }
 }
 
-.choose {
+.choose,
+.feedback {
     padding: 120px 0;
     background-color: #fff;
     &__inner-title {
@@ -737,7 +738,6 @@
         margin-bottom: 35px;
         span {
             color: $lightblue;
-
         }
     }
     &__text {
@@ -746,5 +746,181 @@
         font-size: 16px;
         color: #555555;
         margin-bottom: 65px;
+        line-height: 30px;
     }
 }
+
+.choose__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.choose__item {
+    max-width: 360px;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    &-number {
+        color: #5c87f8;
+        font-size: 48px;
+        @include f300;
+        opacity: 0.2;
+        line-height: 42px;
+        text-align: left;     
+    }
+    &-img {
+        .lnr-size {
+            font-size: 60px;
+            line-height: 60px;
+            display: block;
+            text-align: center;
+            margin-bottom: 50px;
+            color: $lightblue;
+        }
+        .lnr-magic-wand {
+            color: #7f4ec2;
+        }
+        .lnr-lock {
+            color: #77de51;
+        }
+        .lnr-chart-bars {
+            color: #feb71d;
+        }
+        .lnr-leaf {
+            color: #58c9e9;
+        }
+        .lnr-phone {
+            color: #ff6a6d;
+        }
+    }
+    &-title {
+        font-size: 24px;
+        color: #000;
+        margin-bottom: 30px;
+    }
+    &-text {
+        color: #555555;
+        line-height: 30px;
+        padding-bottom: 40px;
+    }
+}
+
+.offers {
+    /* картинка кривая в макете, поэтому объединяю весь bg фон в один, а не делю на 2 блока */
+    background-image: url(../images/bg-offer.jpg); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 561px;
+}
+
+.offers__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.offers__item {
+    padding: 100px 15px;
+    max-width: 595px;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    &-img {
+        margin-bottom: 50px;
+    }
+    &-title {
+        margin-bottom: 35px;
+        font-size: 36px;
+        color: #fff;
+    }
+    &-text {
+        margin-bottom: 50px;
+        font-size: 16px;
+        line-height: 30px;
+        color: #fff;
+    }
+    &-link {
+        padding: 20px 25px;
+        background-color: #fff;
+        border-radius: 26px;
+        width: 190px;
+        color: $lightblue;
+    }
+    .offers__item-link--two {
+        color: $purple;
+    }
+}
+
+.feedback__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.feedback__item {
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    max-width: 555px;
+    padding: 50px 40px;
+    border-left: 2px solid $lightblue;
+}
+
+.feedback__item-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 400px;
+}
+
+.feedback__item-box-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.feedback__item-info__avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.feedback__item-info__name {
+    font-size: 20px;
+    color: #000;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.feedback__item-info-product {
+    font-size: 16px;
+    color: #555555;
+    display: block;
+}
+
+.feedback__item-img {
+    font-size: 60px;
+    color: #e8e8e8;
+}
+
+.feedback__item-content {
+    font-size: 16px;
+    color: #555;
+    line-height: 30px;
+}
+
+.feedback__link {
+    text-align: center;
+}
+
+.feedback__link-btn {
+    padding: 21px 28px;
+    background-color: $lightblue;
+    border-radius: 26px;
+    text-align: center;
+    color: #fff;
+}
+
