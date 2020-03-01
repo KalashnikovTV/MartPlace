@@ -25,6 +25,8 @@ $(function(){
         nextArrow: '<button class="slick-arrow slick-next"><img src="images/content/chevron-right.png" alt=""></button>',
     });
 
+    $('select').styler();
+
     var mixer = mixitup('.products__inner-box');
     
 });
