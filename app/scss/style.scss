@@ -514,10 +514,12 @@
     color: #747b86;
     display: flex;
     padding-left: 15px;
+    position: relative;
     &-btn {
         margin-left: 25px;
         width: 5px;
         cursor: pointer;
+        display: block;
     }
     &-dots {
         width: 100%;
@@ -529,6 +531,28 @@
             margin-bottom: 4px;
         }
     }
+    button {
+        display: block;
+        width: 100%;
+        background-color: #eef1f5;
+        border: none;
+        border: 1px solid #c76dc7;
+        height: 35px;
+        cursor: pointer;
+        font-size: 14px;
+        border-radius: 4px;
+    }
+}
+
+.products__filters > ul {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 40px;
+    background-color: #eef1f5;
+    min-width: 86px;
+    border-radius: 4px;
 }
 
 .products__inner-bg {

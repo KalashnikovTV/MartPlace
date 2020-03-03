@@ -48,6 +48,10 @@ $(function(){
         $('.menu > ul').slideToggle();
     });
 
+    $('.products__filters-btn').on('click', function(){
+      $('.products__filters > ul').slideToggle();
+  });
+
     var mixer = mixitup('.products__inner-box');
     
 });
