@@ -23,9 +23,30 @@ $(function(){
         slidesToScroll: 3,
         prevArrow: '<button class="slick-arrow slick-prev"><img src="images/content/chevron-left.png" alt=""></button>',
         nextArrow: '<button class="slick-arrow slick-next"><img src="images/content/chevron-right.png" alt=""></button>',
+        responsive: [
+            {
+              breakpoint: 1150,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 780,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        
     });
 
     $('select').styler();
+
+    $('.header__menu-btn').on('click', function(){
+        $('.menu > ul').slideToggle();
+    });
 
     var mixer = mixitup('.products__inner-box');
     
