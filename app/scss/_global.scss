@@ -8,11 +8,41 @@ html {
     box-sizing: inherit;
 }
 
+a {
+    display: inline-block;
+    text-decoration: none;
+}
 
-
-
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
 body {
     font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
     font-size: 16px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title {
+    color: #000;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.products__title-inner {
+    padding: 45px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
 }

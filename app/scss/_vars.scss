@@ -1,3 +1,20 @@
 $lightblue: #0674ec;
-$darkblude: #163bc2;
-$lightwhite: #eef1f3;
+$darkblue: #163bc2;
+$lightwhite: #eef1f5;
+$purple: #7347c1;
+
+@mixin f300 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+}
+
+@mixin f500 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+@mixin f700 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+
